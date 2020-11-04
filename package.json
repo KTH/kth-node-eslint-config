@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "ESLint config",
   "automaticPublish": "true",
+  "main": "index.js",
   "author": {
     "name": "KTH",
     "email": "infosys@kth.se",
@@ -18,5 +19,14 @@
     "eslint",
     "kth",
     "configuration"
-  ]
+  ],
+  "devDependencies": {
+    "eslint-config-airbnb": "^18.2.0",
+    "eslint-config-prettier": "^6.13.0",
+    "eslint-plugin-jest": "^24.1.0",
+    "eslint-plugin-prettier": "^3.1.4"
+  },
+  "peerDependencies": {
+    "eslint": ">= 7"
+  }
 }
