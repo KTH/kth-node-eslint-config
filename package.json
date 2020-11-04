@@ -9,6 +9,9 @@
     "email": "infosys@kth.se",
     "url": "https://github.com/KTH"
   },
+  "script": {
+    "build": "echo 'OK'"
+  },
   "license": "MIT",
   "repository": {
     "type": "git",
