@@ -1,0 +1,22 @@
+{
+  "name": "kth-node-eslint-config",
+  "version": "1.0.0",
+  "description": "ESLint config",
+  "automaticPublish": "true",
+  "author": {
+    "name": "KTH",
+    "email": "infosys@kth.se",
+    "url": "https://github.com/KTH"
+  },
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/KTH/kth-node-eslint-config"
+  },
+  "keywords": [
+    "node",
+    "eslint",
+    "kth",
+    "configuration"
+  ]
+}

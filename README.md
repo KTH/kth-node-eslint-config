@@ -1,2 +1,3 @@
-# kth-node-eslint-config
+# eslint-config-kth
+
 ESLint config
