@@ -1,5 +1,5 @@
 {
-  "name": "kth-node-eslint-config",
+  "name": "@kth/eslint-config-kth",
   "version": "1.0.0",
   "description": "ESLint config",
   "automaticPublish": "true",
@@ -12,7 +12,7 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/KTH/kth-node-eslint-config"
+    "url": "https://github.com/KTH/eslint-config-kth"
   },
   "keywords": [
     "node",
