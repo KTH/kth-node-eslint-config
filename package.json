@@ -9,7 +9,7 @@
     "email": "infosys@kth.se",
     "url": "https://github.com/KTH"
   },
-  "script": {
+  "scripts": {
     "build": "echo 'OK'"
   },
   "license": "MIT",
