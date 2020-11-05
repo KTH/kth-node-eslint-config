@@ -2,7 +2,17 @@
 
 ## Start using this config
 
-In our standard projects your .eslintrc file will only need to contain the following:
+```
+npm install eslint-config-kth --save-dev
+```
+
+You also need [ESLint](https://eslint.org/)
+
+```
+npm install eslint --save-dev
+```
+
+In our standard projects your .eslintrc file, placed in the root of your project, will only need to contain the following:
 
 ```
 {
@@ -18,7 +28,7 @@ Our goal with this module is to use the same ESLint config in all our node proje
 
 It's currently based on AirBnB's config.
 
-This means we all are responsible for keeping this module fresh to help us in our daily work.
+We are all responsible for keeping this module fresh to help us in our daily work.
 
 Don´t be afraid to make changes but also take your time to discuss with colleagues about the changes you want to make.
 
