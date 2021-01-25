@@ -4,7 +4,7 @@ module.exports = {
     node: true,
     "jest/globals": true,
   },
-  extends: ["airbnb", "prettier"],
+  extends: ["airbnb", "prettier", "plugin:testing-library/recommended", "plugin:jest-dom/recommended", "plugin:testing-library/react"],
   parser: "babel-eslint",
   parserOptions: {
     ecmaFeatures: {
@@ -15,7 +15,7 @@ module.exports = {
     ecmaVersion: 2018,
     sourceType: "module",
   },
-  plugins: ["prettier", "jest"],
+  plugins: ["prettier", "jest", "testing-library", "jest-dom"],
   rules: {
     "import/extensions": "off",
     "no-plusplus": "off",
@@ -33,11 +33,7 @@ module.exports = {
     "no-underscore-dangle": "off",
     "prefer-template": "off",
     "prettier/prettier": ["error"],
-    "react/destructuring-assignment": [
-      "error",
-      "always",
-      { ignoreClassFields: true },
-    ],
+    "react/destructuring-assignment": ["error", "always", { ignoreClassFields: true }],
     "react/jsx-filename-extension": "off",
     "react/prop-types": "off",
     "sort-imports": "off",
