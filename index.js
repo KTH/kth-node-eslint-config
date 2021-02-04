@@ -20,6 +20,7 @@ module.exports = {
     },
     ecmaVersion: 2018,
     sourceType: 'module',
+    requireConfigFile: false,
   },
   plugins: ['prettier', 'jest', 'jest-dom', 'testing-library'],
   rules: {

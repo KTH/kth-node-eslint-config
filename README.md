@@ -2,25 +2,25 @@
 
 ## Start using this config
 
-```
-npm install @kth/eslint-config-kth --save-dev
-```
+- Install all needed packages in your project:
 
-You also need [ESLint](https://eslint.org/)
+  ```
+  npm install --save-dev @kth/eslint-config-kth eslint prettier
+  ```
 
-```
-npm install eslint --save-dev
-```
+  - You need [ESLint](https://eslint.org/) to enable linting.
+  - This ESLint-configuration is also based on [Prettier](https://prettier.io/).
+  - A configuration of [Babel](https://babeljs.io/) can be used when parsing your code.
 
-In our standard projects your .eslintrc file, placed in the root of your project, will only need to contain the following:
+- Place a file ".eslintrc" in the root of your project; it will only need to contain the following:
 
-```
-{
-  "extends": ["@kth/eslint-config-kth"]
-}
-```
+  ```
+  {
+    "extends": ["@kth/eslint-config-kth"]
+  }
+  ```
 
-All configuration needed will come from this config.
+  All configuration needed will come from this config.
 
 ## Developer
 
