@@ -1,9 +1,9 @@
-# eslint-config-kth
+# @kth/eslint-config-kth
 
 ## Start using this config
 
 ```
-npm install eslint-config-kth --save-dev
+npm install @kth/eslint-config-kth --save-dev
 ```
 
 You also need [ESLint](https://eslint.org/)
