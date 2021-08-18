@@ -17,6 +17,7 @@ jobs:
     steps:
       - uses: actions/checkout@v2.3.4
       - name: Run Evolene CI pipeline steps
+        shell: bash
         env:
           SLACK_CHANNELS: "#team-pipeline-build"
           NPM_UPDATES_AVAILABLE: True
