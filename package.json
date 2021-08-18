@@ -10,7 +10,8 @@
     "url": "https://github.com/KTH"
   },
   "scripts": {
-    "build": "echo 'OK'"
+    "build": "echo 'OK'",
+    "test": "echo 'OK'"
   },
   "license": "MIT",
   "repository": {
