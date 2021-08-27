@@ -8,7 +8,7 @@ module.exports = {
     'airbnb',
     'prettier',
     'plugin:jest-dom/recommended',
-    'plugin:testing-library/recommended',
+    'plugin:testing-library/dom',
     'plugin:testing-library/react',
   ],
   parser: '@babel/eslint-parser',
