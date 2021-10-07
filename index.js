@@ -51,7 +51,7 @@ module.exports = {
       'error',
       {
         utilsToCheckFor: {
-          'log.debug': false,
+          debug: false,
         },
       },
     ],
