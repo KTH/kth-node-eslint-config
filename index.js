@@ -5,7 +5,7 @@ module.exports = {
     'jest/globals': true,
   },
   extends: [
-    'airbnb',
+    'eslint:recommended',
     'prettier',
     'plugin:jest-dom/recommended',
     'plugin:testing-library/dom',
