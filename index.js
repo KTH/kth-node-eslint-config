@@ -3,13 +3,17 @@ module.exports = {
     browser: true,
     node: true,
     'jest/globals': true,
+    es6: true,
   },
   extends: [
-    'airbnb',
+    'eslint:recommended',
     'prettier',
     'plugin:jest-dom/recommended',
     'plugin:testing-library/dom',
     'plugin:testing-library/react',
+    'plugin:import/errors',
+    'plugin:import/warnings',
+    'plugin:react/recommended',
   ],
   parser: '@babel/eslint-parser',
   parserOptions: {
@@ -22,7 +26,7 @@ module.exports = {
     sourceType: 'module',
     requireConfigFile: false,
   },
-  plugins: ['prettier', 'jest', 'jest-dom', 'testing-library'],
+  plugins: ['prettier', 'jest', 'jest-dom', 'testing-library', 'import', 'react'],
   rules: {
     'import/extensions': 'off',
     'no-plusplus': 'off',
@@ -47,7 +51,7 @@ module.exports = {
     strict: 'off',
     'global-require': 'off',
     'react/no-multi-comp': 'off',
-    'testing-library/no-debug': [
+    'testing-library/no-debugging-utils': [
       'error',
       {
         utilsToCheckFor: {

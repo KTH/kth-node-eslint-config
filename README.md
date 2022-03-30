@@ -26,8 +26,6 @@
 
 Our goal with this module is to use the same ESLint config in all our node projects at KTH.
 
-It's currently based on AirBnB's config.
-
 We are all responsible for keeping this module fresh to help us in our daily work.
 
 Don´t be afraid to make changes but also take your time to discuss with colleagues about the changes you want to make.
