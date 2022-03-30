@@ -26,6 +26,16 @@ module.exports = {
     sourceType: 'module',
     requireConfigFile: false,
   },
+  settings: {
+    'import/resolver': {
+      node: {
+        extensions: ['.js', '.jsx'],
+      },
+    },
+    react: {
+      version: 'detect',
+    },
+  },
   plugins: ['prettier', 'jest', 'jest-dom', 'testing-library', 'import', 'react'],
   rules: {
     'import/extensions': 'off',
