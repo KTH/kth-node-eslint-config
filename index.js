@@ -47,7 +47,7 @@ module.exports = {
     strict: 'off',
     'global-require': 'off',
     'react/no-multi-comp': 'off',
-    'testing-library/no-debug': [
+    'testing-library/no-debugging-utils': [
       'error',
       {
         utilsToCheckFor: {
