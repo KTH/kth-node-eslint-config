@@ -14,6 +14,7 @@ module.exports = {
     'plugin:import/errors',
     'plugin:import/warnings',
     'plugin:react/recommended',
+    'plugin:jsx-a11y/recommended',
   ],
   parser: '@babel/eslint-parser',
   parserOptions: {
@@ -36,7 +37,7 @@ module.exports = {
       version: 'detect',
     },
   },
-  plugins: ['prettier', 'jest', 'jest-dom', 'testing-library', 'import', 'react'],
+  plugins: ['prettier', 'jest', 'jest-dom', 'testing-library', 'import', 'react', 'jsx-a11y'],
   rules: {
     'import/extensions': 'off',
     'no-plusplus': 'off',
@@ -67,6 +68,20 @@ module.exports = {
         utilsToCheckFor: {
           debug: false,
         },
+      },
+    ],
+    quotes: [
+      0,
+      'single',
+      {
+        avoidEscape: true,
+      },
+    ],
+    'prefer-const': [
+      'error',
+      {
+        destructuring: 'any',
+        ignoreReadBeforeAssign: true,
       },
     ],
   },
