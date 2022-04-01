@@ -84,5 +84,6 @@ module.exports = {
         ignoreReadBeforeAssign: true,
       },
     ],
+    'no-console': ['error', { allow: [''] }],
   },
 }
