@@ -85,5 +85,10 @@ module.exports = {
       },
     ],
     'no-console': ['error', { allow: [''] }],
+    'no-param-reassign': ['error', { props: false }],
+    'no-shadow': ['error', { builtinGlobals: true, hoist: 'functions', allow: [], ignoreOnInitialization: false }],
+    'no-use-before-define': ['error', { functions: true, classes: true, variables: true }],
+    'no-multi-assign': ['error', { ignoreNonDeclaration: true }],
+    'no-var': 'error',
   },
 }
