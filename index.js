@@ -47,6 +47,8 @@ module.exports = {
     'func-names': ['error', 'as-needed'],
     'global-require': 'off',
     'import/extensions': 'off',
+    'import/newline-after-import': ['error', { count: 1 }],
+    'jsx-a11y/label-has-associated-control': ['error', { assert: 'either' }],
     'lines-around-directive': ['error', 'always'],
     'no-console': ['error', { allow: [''] }],
     'no-multi-assign': ['error', { ignoreNonDeclaration: true }],
@@ -80,6 +82,16 @@ module.exports = {
     'prefer-destructuring': ['error', { object: true, array: true }],
     'prefer-template': 'off',
     'prettier/prettier': ['error'],
+    'react/jsx-no-bind': [
+      'error',
+      {
+        ignoreDOMComponents: false,
+        ignoreRefs: false,
+        allowArrowFunctions: false,
+        allowFunctions: false,
+        allowBind: false,
+      },
+    ],
     'react/destructuring-assignment': ['error', 'always', { ignoreClassFields: true }],
     quotes: [
       0,
