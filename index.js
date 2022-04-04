@@ -8,6 +8,7 @@ module.exports = {
   extends: [
     'eslint:recommended',
     'prettier',
+    'plugin:jest/recommended',
     'plugin:jest-dom/recommended',
     'plugin:testing-library/dom',
     'plugin:testing-library/react',
@@ -39,7 +40,17 @@ module.exports = {
   },
   plugins: ['prettier', 'jest', 'jest-dom', 'testing-library', 'import', 'react', 'jsx-a11y'],
   rules: {
+    'arrow-body-style': ['error', 'always'],
+    'array-callback-return': 'error',
+    'consistent-return': ['error', { treatUndefinedAsUnspecified: false }],
+    'dot-notation': 'error',
+    'func-names': ['error', 'as-needed'],
+    'global-require': 'off',
     'import/extensions': 'off',
+    'lines-around-directive': ['error', 'always'],
+    'no-console': ['error', { allow: [''] }],
+    'no-multi-assign': ['error', { ignoreNonDeclaration: true }],
+    'no-param-reassign': ['error', { props: false }],
     'no-plusplus': 'off',
     'no-restricted-syntax': [
       'error',
@@ -52,16 +63,37 @@ module.exports = {
         message: '`with` is disallowed in strict mode because it makes code impossible to predict and optimize.',
       },
     ],
+    'no-shadow': ['error', { builtinGlobals: true, hoist: 'functions', allow: [], ignoreOnInitialization: false }],
+    'no-use-before-define': ['error', { functions: true, classes: true, variables: true }],
     'no-underscore-dangle': 'off',
+    'no-var': 'error',
+    'object-shorthand': ['error', 'always'],
+    'operator-assignment': ['error', 'always'],
+    'prefer-arrow-callback': ['error', { allowNamedFunctions: false, allowUnboundThis: true }],
+    'prefer-const': [
+      'error',
+      {
+        destructuring: 'any',
+        ignoreReadBeforeAssign: true,
+      },
+    ],
+    'prefer-destructuring': ['error', { object: true, array: true }],
     'prefer-template': 'off',
     'prettier/prettier': ['error'],
     'react/destructuring-assignment': ['error', 'always', { ignoreClassFields: true }],
+    quotes: [
+      0,
+      'single',
+      {
+        avoidEscape: true,
+      },
+    ],
     'react/jsx-filename-extension': 'off',
     'react/prop-types': 'off',
-    'sort-imports': 'off',
-    strict: 'off',
-    'global-require': 'off',
     'react/no-multi-comp': 'off',
+    'sort-imports': 'off',
+    'spaced-comment': ['error', 'always'],
+    strict: 'off',
     'testing-library/no-debugging-utils': [
       'error',
       {
@@ -70,25 +102,6 @@ module.exports = {
         },
       },
     ],
-    quotes: [
-      0,
-      'single',
-      {
-        avoidEscape: true,
-      },
-    ],
-    'prefer-const': [
-      'error',
-      {
-        destructuring: 'any',
-        ignoreReadBeforeAssign: true,
-      },
-    ],
-    'no-console': ['error', { allow: [''] }],
-    'no-param-reassign': ['error', { props: false }],
-    'no-shadow': ['error', { builtinGlobals: true, hoist: 'functions', allow: [], ignoreOnInitialization: false }],
-    'no-use-before-define': ['error', { functions: true, classes: true, variables: true }],
-    'no-multi-assign': ['error', { ignoreNonDeclaration: true }],
-    'no-var': 'error',
+    'vars-on-top': 'error',
   },
 }
