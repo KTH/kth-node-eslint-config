@@ -37,6 +37,9 @@ module.exports = {
     react: {
       version: 'detect',
     },
+    jest: {
+      version: 'detect',
+    },
   },
   plugins: ['prettier', 'jest', 'jest-dom', 'testing-library', 'import', 'react', 'jsx-a11y'],
   rules: {
