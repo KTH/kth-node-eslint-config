@@ -43,7 +43,7 @@ module.exports = {
   },
   plugins: ['prettier', 'jest', 'jest-dom', 'testing-library', 'import', 'react', 'jsx-a11y'],
   rules: {
-    'arrow-body-style': ['error', 'always'],
+    'arrow-body-style': ['error', 'as-needed'],
     'array-callback-return': 'error',
     'consistent-return': ['error', { treatUndefinedAsUnspecified: false }],
     'dot-notation': 'error',
