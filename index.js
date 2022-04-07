@@ -51,6 +51,7 @@ module.exports = {
     'global-require': 'off',
     'import/extensions': 'off',
     'import/newline-after-import': ['error', { count: 1 }],
+    'import/order': ['error', { groups: ['builtin', 'external', 'parent', 'sibling', 'index'] }],
     'jsx-a11y/label-has-associated-control': ['error', { assert: 'either' }],
     'lines-around-directive': ['error', 'always'],
     'no-console': ['error', { allow: [''] }],
@@ -67,6 +68,12 @@ module.exports = {
         selector: 'WithStatement',
         message: '`with` is disallowed in strict mode because it makes code impossible to predict and optimize.',
       },
+    ],
+
+    'no-restricted-globals': [
+      'error',
+      { name: 'isNaN', message: "Unexpected use of 'isNaN'. Use Number.isNaN instead" },
+      { name: 'isFinite', message: "Unexpected use of 'isFinite'. Use Number.isFinite instead" },
     ],
     'no-shadow': ['error', { builtinGlobals: true, hoist: 'functions', allow: [], ignoreOnInitialization: false }],
     'no-use-before-define': ['error', { functions: true, classes: true, variables: true }],
