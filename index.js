@@ -97,8 +97,8 @@ module.exports = {
       {
         ignoreDOMComponents: false,
         ignoreRefs: false,
-        allowArrowFunctions: false,
-        allowFunctions: false,
+        allowArrowFunctions: true,
+        allowFunctions: true,
         allowBind: false,
       },
     ],
