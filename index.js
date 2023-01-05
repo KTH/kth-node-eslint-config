@@ -75,7 +75,15 @@ module.exports = {
       { name: 'isNaN', message: "Unexpected use of 'isNaN'. Use Number.isNaN instead" },
       { name: 'isFinite', message: "Unexpected use of 'isFinite'. Use Number.isFinite instead" },
     ],
-    'no-shadow': ['error', { builtinGlobals: true, hoist: 'functions', allow: [], ignoreOnInitialization: false }],
+    'no-shadow': [
+      'error',
+      {
+        builtinGlobals: true,
+        hoist: 'functions',
+        allow: ['uri', 'stop', 'location', 'status', 'screen', 'name', 'event', 'origin', 'parent'],
+        ignoreOnInitialization: false,
+      },
+    ],
     'no-use-before-define': ['error', { functions: true, classes: true, variables: true }],
     'no-underscore-dangle': 'off',
     'no-var': 'error',
