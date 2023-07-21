@@ -53,7 +53,14 @@ module.exports = {
     'import/newline-after-import': ['error', { count: 1 }],
     'import/order': ['error', { groups: ['builtin', 'external', 'parent', 'sibling', 'index'] }],
     'jsx-a11y/label-has-associated-control': ['error', { assert: 'either' }],
-    'lines-around-directive': ['error', 'always'],
+    'padding-line-between-statements': [
+      'error',
+      {
+        blankLine: 'always',
+        prev: '*',
+        next: 'directive',
+      },
+    ],
     'no-console': ['error', { allow: [''] }],
     'no-multi-assign': ['error', { ignoreNonDeclaration: true }],
     'no-param-reassign': ['error', { props: false }],
