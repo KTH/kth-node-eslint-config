@@ -42,7 +42,7 @@
     "eslint": "^8.35.0",
     "husky": "^8.0.3",
     "jest": "^29.6.1",
-    "prettier": "^2.8.4"
+    "prettier": "^3.0.0"
   },
   "// (prettier)": "configuration version 2020-06-15 - might also reside in .prettierrc.json",
   "prettier": {
