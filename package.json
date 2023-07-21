@@ -51,5 +51,8 @@
     "semi": false,
     "singleQuote": true,
     "trailingComma": "es5"
+  },
+  "eslintConfig": {
+    "extends": "./index.js"
   }
 }
