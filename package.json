@@ -11,7 +11,7 @@
   "scripts": {
     "build": "echo 'OK'",
     "test": "jest",
-    "prepare": "husky install"
+    "prepare": "if [ -f ./node_modules/.bin/husky ]; then husky install; fi"
   },
   "license": "MIT",
   "repository": {
