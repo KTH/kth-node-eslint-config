@@ -1,8 +1,7 @@
 {
   "name": "@kth/eslint-config-kth",
-  "version": "3.0.0",
+  "version": "3.0.14",
   "description": "ESLint config",
-  "automaticPublish": "true",
   "main": "index.js",
   "author": {
     "name": "KTH",
