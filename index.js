@@ -99,6 +99,7 @@ module.exports = {
     'no-use-before-define': ['error', { functions: true, classes: true, variables: true }],
     'no-underscore-dangle': 'off',
     'no-var': 'error',
+    '@typescript-eslint/no-var-requires': 'off',
     'object-shorthand': ['error', 'always'],
     'operator-assignment': ['error', 'always'],
     'prefer-arrow-callback': ['error', { allowNamedFunctions: false, allowUnboundThis: true }],
