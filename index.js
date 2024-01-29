@@ -41,7 +41,7 @@ module.exports = {
       version: 'detect',
     },
   },
-  plugins: ['prettier', 'jest', 'jest-dom', 'testing-library', 'import', 'react', 'jsx-a11y'],
+  plugins: ['prettier', 'jest', 'jest-dom', 'testing-library', 'import', 'react', 'jsx-a11y', '@stylistic/js'],
   rules: {
     'arrow-body-style': ['error', 'as-needed'],
     'array-callback-return': 'error',
@@ -53,7 +53,7 @@ module.exports = {
     'import/newline-after-import': ['error', { count: 1 }],
     'import/order': ['error', { groups: ['builtin', 'external', 'parent', 'sibling', 'index'] }],
     'jsx-a11y/label-has-associated-control': ['error', { assert: 'either' }],
-    'padding-line-between-statements': [
+    '@stylistic/js/padding-line-between-statements': [
       'error',
       {
         blankLine: 'always',
@@ -129,7 +129,7 @@ module.exports = {
     'react/prop-types': 'off',
     'react/no-multi-comp': 'off',
     'sort-imports': 'off',
-    'spaced-comment': ['error', 'always'],
+    '@stylistic/js/spaced-comment': ['error', 'always'],
     strict: 'off',
     'testing-library/no-debugging-utils': [
       'error',
