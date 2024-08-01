@@ -16,6 +16,7 @@ module.exports = {
     'plugin:import/warnings',
     'plugin:react/recommended',
     'plugin:jsx-a11y/recommended',
+    'plugin:react-hooks/recommended',
   ],
   parser: '@babel/eslint-parser',
   parserOptions: {
